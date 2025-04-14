@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Scale, FileText, Scales } from 'lucide-react';
+import { Scale, FileText, Scale as Scales } from 'lucide-react';
 
 const Header = () => {
   return (
