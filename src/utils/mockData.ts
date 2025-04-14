@@ -49,9 +49,9 @@ export const mockEditSuggestions: EditSuggestion[] = [
     id: 'e1',
     clauseId: 'c2',
     original: 'In no event shall Licensor be liable for any indirect, incidental, special, exemplary, or consequential damages, however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of the Software, even if advised of the possibility of such damage.',
-    suggested: 'In no event shall Licensor be liable for any indirect, incidental, special, exemplary, or consequential damages, however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of the Software, even if advised of the possibility of such damage. Licensor's total liability for all claims related to this Agreement shall not exceed the amounts paid by Licensee to Licensor under this Agreement in the twelve (12) months preceding the claim.',
+    suggested: "In no event shall Licensor be liable for any indirect, incidental, special, exemplary, or consequential damages, however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of the Software, even if advised of the possibility of such damage. Licensor's total liability for all claims related to this Agreement shall not exceed the amounts paid by Licensee to Licensor under this Agreement in the twelve (12) months preceding the claim.",
     reasoning: 'The current clause completely eliminates all liability for the Licensor without any cap on liability, which courts often find unenforceable.',
-    impact: 'Adding a liability cap provides some protection for the Licensee while still limiting Licensor's overall exposure to a reasonable amount.'
+    impact: "Adding a liability cap provides some protection for the Licensee while still limiting Licensor's overall exposure to a reasonable amount."
   },
   {
     id: 'e2',
