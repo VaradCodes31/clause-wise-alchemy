@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
 
-## Project info
+# Contract Analyzer
 
-**URL**: https://lovable.dev/projects/f181d417-a81b-443c-ad82-88104c51b9f2
+A Python-based tool for analyzing legal contracts, identifying clauses, assessing risks, and providing edit suggestions.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Parse PDF and DOCX contract documents
+- Identify and extract clauses
+- Analyze risk levels for each clause
+- Generate edit suggestions
+- Simulate counterparty arguments
+- Find relevant legal references
 
-**Use Lovable**
+## Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f181d417-a81b-443c-ad82-88104c51b9f2) and start prompting.
+```bash
+# Clone the repository
+git clone <repository-url>
+cd contract-analyzer
 
-Changes made via Lovable will be committed automatically to this repo.
+# Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-**Edit a file directly in GitHub**
+## Usage
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Basic usage
+python contract_analyzer.py path/to/contract.pdf
 
-**Use GitHub Codespaces**
+# Save analysis results to a file
+python contract_analyzer.py path/to/contract.pdf --output analysis_results.json
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Example Output
 
-## What technologies are used for this project?
+The tool outputs a JSON structure with the analysis results:
 
-This project is built with:
+```json
+{
+  "contract_id": "contract_1",
+  "contract_title": "example_contract.pdf",
+  "analysis": [
+    {
+      "clause_id": "clause_1",
+      "clause_title": "Clause 1",
+      "risk_level": "medium",
+      "edit_suggestions": [...],
+      "counterparty_arguments": [...],
+      "legal_references": [...]
+    },
+    ...
+  ]
+}
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Future Enhancements
 
-## How can I deploy this project?
+- Integrate with NLP libraries for more sophisticated clause identification
+- Add machine learning models for risk assessment
+- Connect to legal databases for comprehensive reference lookup
+- Implement a simple GUI interface
+- Add support for more document formats
 
-Simply open [Lovable](https://lovable.dev/projects/f181d417-a81b-443c-ad82-88104c51b9f2) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
